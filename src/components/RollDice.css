@@ -1,0 +1,230 @@
+.RollDice {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+/* Shows each dice in one row */
+.RollDice-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Styling rolldice button */
+.RollDice button {
+    width: 15em;
+    padding: 1.5em;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    margin-top: 3em;
+    align-self: center;
+}
+
+/* Setting hover effect on button */
+.RollDice button:hover {
+    cursor: pointer;
+    background-color: rgb(34, 33, 33);
+
+}
+
+.RollDice-rolling {
+    border: 0px;
+    border-radius: 10px;
+    background-color: darkslateblue !important;
+    opacity: 0.7
+}
+
+
+
+
+/* .card{
+    
+    display:flex;
+    gap:10px;
+    color:aliceblue;
+    margin-top:40px;
+    flex-flow: row;
+    flex-wrap: wrap;
+margin:50px;
+    
+    
+}
+.wrapper {
+    padding: 10px;
+    text-align: center; 
+    background:linear-gradient(135deg, rgb(1, 1, 57), rgb(34, 26, 26));
+     width:200px;
+    border-radius: 8px;
+
+}
+.wrapper:hover{
+    
+    border:white;
+    
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+    box-shadow: 1px 1px 10px 1px rgb(185, 185, 185);
+    transform: translate(0px, -2px);
+}
+
+.guess-result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #030303;
+    padding: 16px 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    font-size: 1.3rem;
+    text-align: center;
+    transition: opacity 0.5s;
+    opacity: 1;
+    letter-spacing: 1px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 0.7s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+} */
+body, #root {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-image: url('https://img.freepik.com/premium-photo/abstract-colorful-math-formula-background_122462-248.jpg?w=1060');
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background: rgba(255,255,255,0.15);
+    border-radius: 28px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    margin: 40px auto 0 auto;
+    max-width: 1400px;
+    min-height: 350px;
+
+}
+
+.wrapper {
+    width: 200px;
+    height: 190px;
+    background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    font-size: 2.3rem;
+    font-weight: 700;
+    user-select: none;
+    border: 3px solid #fff;
+    color: #0e02fc;
+    margin: 10px 0;
+    background-image: url('https://image.shutterstock.com/image-illustration/mathematics-formulas-illustration-2d-set-260nw-2176325807.jpg');
+
+}
+.wrapper:hover {
+    transform: scale(1.09) rotate(-2deg);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.22);
+    z-index: 2;
+}
+
+.guess-result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: 18px 36px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    font-size: 1.4rem;
+    text-align: center;
+    transition: opacity 0.5s;
+    opacity: 1;
+    letter-spacing: 1px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: bounceIn 0.5s;
+    border: 2px solid #fff;
+    position:fixed;
+    top:50px;
+    right:100px;
+    
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7) translateY(40px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1) translateY(-10px);
+    }
+    80% {
+        transform: scale(0.95) translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+h2{
+    font-size:3rem;
+}
+
+@media(max-width:1200px){
+    .guess-result{
+        font-size: 1.2rem;
+        max-width: 300px;
+        right:50px;
+        
+
+    }
+}
+
+.wrapper.selected {
+    border: 3px solid #ff4e50;
+    box-shadow: 0 0 0 6px #ff4e5044;
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    color: #fff;
+    z-index: 3;
+    transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+}
+
+@keyframes fadeInNum {
+    from { opacity: 0; transform: scale(0.7) rotateY(90deg); }
+    to { opacity: 1; transform: scale(1) rotateY(0); }
+}

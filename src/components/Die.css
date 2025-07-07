@@ -1,0 +1,104 @@
+.Die {
+    font-size: 10em;
+    padding: 0.25em;
+    color: slateblue;
+   
+   }
+.Die-shaking {
+    animation-name: wobble;
+    animation-duration: 0.5s;
+   
+   }
+
+@keyframes wobble {
+    0% {
+        transform: rotateZ(0deg);
+        opacity:1;
+
+    }
+    5% {
+        transform: rotateZ(18deg);
+                opacity: 1;
+    }
+    10% {
+        transform: rotateZ(36deg);
+                opacity: 0.9;
+    }
+    15% {
+        transform: rotateZ(54deg);
+                opacity: 0.9;
+    }
+    20% {
+        transform: rotateZ(72deg);
+                opacity: 0.8;
+    }
+    25% {
+        transform: rotateZ(90deg);
+                opacity: 0.8;
+    }
+    30% {
+        transform: rotateZ(108deg);
+                opacity: 0.7;
+    }
+    35% {
+        transform: rotateZ(126deg);
+                opacity: 0.7;
+    }
+    40% {
+        transform: rotateZ(144deg);
+                opacity: 0.6;
+    }
+    45% {
+        transform: rotateZ(162deg);
+                opacity: 0.6;
+    }
+    50% {
+        transform: rotateZ(180deg);
+                opacity: 0.5;
+    }
+    55% {
+        transform: rotateZ(198deg);
+                opacity: 0.5;
+    }
+    60% {
+        transform: rotateZ(216deg);
+                opacity: 0.4;
+    }
+    65% {
+        transform: rotateZ(234deg);
+                opacity: 0.4;
+    }
+    70% {
+        transform: rotateZ(252deg);
+                opacity: 0.3;
+    }
+    75% {
+        transform: rotateZ(270deg);
+                opacity: 0.3;
+    }
+    80% {
+        transform: rotateZ(288deg);
+                opacity: 0.5;
+    }
+    85% {
+        transform: rotateZ(306deg);
+                opacity: 0.5;
+    }
+    90% {
+        transform: rotateZ(324deg);
+            opacity: 0.6;
+        }
+    95% {
+        transform: rotateZ(342deg);
+                opacity: 0.9;
+    }
+    100% {
+        transform: rotateZ(360deg);
+                opacity: 1;
+    }
+} 
+
+
+
+
+
