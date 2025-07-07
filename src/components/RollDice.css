@@ -19,7 +19,7 @@
     border-radius: 10px;
     color: white;
     background-color: black;
-    margin-top: 3em;
+    margin-top: 0.3em;
     align-self: center;
 }
 
@@ -114,7 +114,8 @@ body, #root {
     padding: 0;
     background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-image: url('https://img.freepik.com/premium-photo/abstract-colorful-math-formula-background_122462-248.jpg?w=1060');
+     background-image: url('https://img.freepik.com/premium-photo/abstract-colorful-math-formula-background_122462-248.jpg?w=1060'); 
+    /* background-image : url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msyOa?w=0&h=0&q=60&m=6&f=jpg&u=t'); */
 }
 
 .card {
@@ -147,12 +148,14 @@ body, #root {
     position: relative;
     font-size: 2.3rem;
     font-weight: 700;
+     -webkit-user-select: none;
     user-select: none;
     border: 3px solid #fff;
     color: #0e02fc;
+    color:white;
     margin: 10px 0;
     background-image: url('https://image.shutterstock.com/image-illustration/mathematics-formulas-illustration-2d-set-260nw-2176325807.jpg');
-
+      background-image : url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msyOa?w=0&h=0&q=60&m=6&f=jpg&u=t');
 }
 .wrapper:hover {
     transform: scale(1.09) rotate(-2deg);

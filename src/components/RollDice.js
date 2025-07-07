@@ -24,7 +24,7 @@ const RollDice = ({ sides = ['one', 'two', 'three', 'four', 'five', 'six'] }) =>
   const [canGuess, setCanGuess] = useState(false);
   const [numbersRevealed, setNumbersRevealed] = useState(false);
 
-  // Convert die face string to number (1-6)
+  
   const dieFaceToNumber = (face) => {
     const mapping = {
       one: 1,
@@ -105,12 +105,7 @@ const RollDice = ({ sides = ['one', 'two', 'three', 'four', 'five', 'six'] }) =>
           {guessResult === 'The guess is correct' ? '🎉 The guess is correct!' : '❌ The guess is incorrect!'}
         </div>
       )}
-      <style>{`
-        @keyframes fadeInNum {
-          from { opacity: 0; transform: scale(0.7) rotateY(90deg); }
-          to { opacity: 1; transform: scale(1) rotateY(0); }
-        }
-      `}</style>
+     
     </>
   );
 };
